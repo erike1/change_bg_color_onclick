@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+text-align: center;
+/* margin: auto; */
+font-size: 135%;
+}
+
+button{
+    padding: 10px;
+    font-size: 80%;
+}
