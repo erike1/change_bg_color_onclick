@@ -7,16 +7,12 @@ btn.addEventListener('click', ()=>{
     let RGB_G = Math.ceil(Math.random()*255)
     let RGB_B = Math.ceil(Math.random()*255)
     console.log(RGB_R, RGB_G, RGB_B);
-    let color = `rgb(${RGB_R}, ${RGB_G}, ${RGB_B})`
+    let color = `(${RGB_R}, ${RGB_G}, ${RGB_B})`
     console.log(color)
 
-    document.querySelector('#RGB_R').textContent = RGB_R
-    document.querySelector('#RGB_G').textContent = RGB_G
-    document.querySelector('#RGB_B').textContent = RGB_B
-    document.querySelector('#text-RGB').textContent = color
+    document.querySelector('#text-RGB').textContent = `RGB${color}`
 
-    // document.querySelector('body').style.backgroundColor = 'rgb(25, 171, 245)'
-    document.querySelector('body').style.backgroundColor = color
+    document.querySelector('body').style.backgroundColor = `rgb${color}`
 
     let contrast = 90
     if(RGB_R < contrast || RGB_G < contrast || RGB_B < contrast) {
